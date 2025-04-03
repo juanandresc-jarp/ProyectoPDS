@@ -1,0 +1,12 @@
+GET http://localhost:8080/api/documentos
+GET http://localhost:8080/api/documentos/4151515
+POST http://localhost:8080/api/documentos
+{
+  "Documento de identificación": "55588844",
+  "Empresa": "Energia",
+  "Nombre ciudadano": "Daniel Castillo",
+  "Fecha queja": "2025-04-03",
+  "Tipo de queja": "Critica",
+  "Estado": "Pendiente"
+}
+
