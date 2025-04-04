@@ -33,9 +33,11 @@ build/
 .vscode/
 
 # Ignorar archivos de configuración de Spring
-src/main/resources/application.properties
-src/main/resources/application.yml
+# src/main/resources/application.properties
+# src/main/resources/application.yml
 
 # Opcional: ignorar todas las variantes de entorno
-src/main/resources/application-*.properties
-src/main/resources/application-*.yml
+# src/main/resources/application-*.properties
+# src/main/resources/application-*.yml
+
+.env
