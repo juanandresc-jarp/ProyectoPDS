@@ -1,9 +1,15 @@
 FROM openjdk:23-jdk
 
-ARG JAR_FILE=./demo/target/*.jar
+COPY . /spring
 
-COPY ${JAR_FILE} app.jar
+WORKDIR /spring/demo
+
+RUN ./mvnw clean package
+
+WORKDIR /spring/demo/target
+
+RUN ls -a
 
 EXPOSE 8080
 
-ENTRYPOINT ["java", "-jar", "/app.jar"]
+ENTRYPOINT ["java", "-jar", "demo-0.0.1-SNAPSHOT.jar"]
